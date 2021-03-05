@@ -9,13 +9,13 @@ public class SpyNumber {
 
         int sum = 0, product = 1;
 
-        for (int i = 0; num > 0 ; i++){;
+        while (num > 0 ){
             num = num % 10;
             sum += num;
             product *= num;
             num = num / 10;
-
         }
+
         if (sum == product) {
             System.out.println("Spy");
         }else {
